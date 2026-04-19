@@ -21,6 +21,8 @@ function calcular() {
     let total = calcularTotalPagar(monto, interes);
     document.getElementById("spnTotalPrestamo").innerText = total.toFixed(2);
 
+let cuota = calcularCuotaMensual(total, plazo);
+document.getElementById("spnCuotaMensual").innerText = cuota.toFixed(2);
 
 
 
