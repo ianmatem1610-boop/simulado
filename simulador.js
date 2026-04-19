@@ -7,6 +7,10 @@ function calcular() {
     let disponible = calcularDisponible(ingresos, egresos);
 
     document.getElementById("spnDisponible").innerText = disponible.toFixed(2);
+
+    let capacidad = calcularCapacidadPago(disponible);
+    document.getElementById("spnCapacidadPago").innerText = capacidad.toFixed(2);
+
 }
 
 document.getElementById("btnCalcularCredito").addEventListener("click", calcular);
