@@ -11,6 +11,16 @@ function calcular() {
     let capacidad = calcularCapacidadPago(disponible);
     document.getElementById("spnCapacidadPago").innerText = capacidad.toFixed(2);
 
+    let monto = parseFloat(document.getElementById("txtMonto").value) || 0;
+    let plazo = parseInt(document.getElementById("txtPlazo").value) || 0;
+    let tasa = parseFloat(document.getElementById("txtTasaInteres").value) || 0;
+
+    let interes = calcularInteresSimple(monto, tasa, plazo);
+    document.getElementById("spnInteresPagar").innerText = interes.toFixed(2);
+
+
+
+
 }
 
 document.getElementById("btnCalcularCredito").addEventListener("click", calcular);
