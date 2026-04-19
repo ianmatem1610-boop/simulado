@@ -18,6 +18,10 @@ function calcular() {
     let interes = calcularInteresSimple(monto, tasa, plazo);
     document.getElementById("spnInteresPagar").innerText = interes.toFixed(2);
 
+    let total = calcularTotalPagar(monto, interes);
+    document.getElementById("spnTotalPrestamo").innerText = total.toFixed(2);
+
+
 
 
 
