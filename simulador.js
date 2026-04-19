@@ -28,11 +28,16 @@ function calcular() {
 
     if (aprobado) {
         document.getElementById("spnEstadoCredito").innerText = "CRÉDITO APROBADO";
+        document.getElementById("spnEstadoCredito").style.color = "green";
     } else {
         document.getElementById("spnEstadoCredito").innerText = "CRÉDITO RECHAZADO";
+        document.getElementById("spnEstadoCredito").style.color = "red";
     }
 
 
 }
 
 document.getElementById("btnCalcularCredito").addEventListener("click", calcular);
+document.getElementById("btnReiniciar").addEventListener("click", function () {
+    location.reload();
+});
