@@ -1,0 +1,16 @@
+PROMPT 1: REGLAS BÁSICAS
+Hola, ayúdame a que mi simulador no acepte campos vacíos. 
+También ponle estas reglas: 
+- El monto debe ser de $100 para arriba.
+- El plazo debe ser entre 1 y 30 años.
+- La tasa de interés no puede ser mayor a 100 ni menor a 1.
+Dime cómo validar esto en JS."
+
+PROMPT 2: MOSTRAR ERRORES
+Haz que los errores se vean en la pantalla. 
+Quiero que aparezca un texto rojo justo debajo de cada cuadrito (input) que esté mal. 
+También haz que el borde del cuadrito se ponga rojo para que el usuario sepa dónde se equivocó.
+
+PROMPT 3: LIMPIAR Y CALCULAR
+Ayúdame a que cuando el usuario corrija los datos y vuelva a dar clic en 'Calcular', los mensajes rojos viejos se borren. 
+Además, haz que el botón de calcular no funcione si todavía hay errores en el formulario.

@@ -1,0 +1,13 @@
+
+registro de prompst
+
+Prompt 1: Estilo Visual
+
+Crea un diseño de 'Banca Digital' con fondo oscuro y un contenedor estilo cristal esmerilado. Usa colores azul marino y cian para un aspecto empresarial.
+
+Prompt 2: Imagen y Logo
+
+Añade un banner superior con una imagen de atención al cliente y superpón el logo 'KRAKEBANK' en color cian.
+
+Prompt 3: Responsividad
+Haz que el simulador sea responsive para móviles, ajustando botones e inputs, y añade una animación de entrada suave al cargar. 
