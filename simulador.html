@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>KrakeBank | Simulador de Crédito Pro</title>
     <link rel="stylesheet" href="simulador.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -22,43 +24,34 @@
             <label for="txtIngresos">Ingresos Mensuales:</label>
             <input type="text" id="txtIngresos" placeholder="Ej: 1200.00">
 
-            <label for="txtEgresos">Egresos Mensuales:</label>
-            <input type="text" id="txtEgresos" placeholder="Ej: 400.00">
+            <label for="txtArriendo">Arriendo:</label>
+            <input type="text" id="txtArriendo" placeholder="Ej: 300.00">
+
+            <label for="txtAlimentacion">Alimentación:</label>
+            <input type="text" id="txtAlimentacion" placeholder="Ej: 250.00">
+
+            <label for="txtVarios">Varios:</label>
+            <input type="text" id="txtVarios" placeholder="Ej: 100.00">
 
             <div class="result-box">
+                <p>Total Gastos: <span id="spnTotalGastos">0.00</span></p>
                 <p>Disponible: <span id="spnDisponible"></span></p>
                 <p>Capacidad de pago: <span id="spnCapacidadPago"></span></p>
             </div>
+        </div>
 
-            <h2>Solicitud de crédito</h2>
-            <label for="txtMonto">Monto Solicitado:</label>
-            <input type="text" id="txtMonto" placeholder="Monto del préstamo">
+        <div class="status-zone">
+            <p>Estado: <span id="spnEstadoCredito">ESPERANDO DATOS...</span></p>
+        </div>
 
-            <label for="txtPlazo">Plazo (Años):</label>
-            <input type="text" id="txtPlazo" placeholder="Ej: 2">
-
-            <label for="txtTasaInteres">Tasa de Interés (%):</label>
-            <input type="text" id="txtTasaInteres" placeholder="Tasa anual">
-
-            <div class="result-box">
-                <p>Interés a pagar: <span id="spnInteresPagar"></span></p>
-                <p>Total préstamo: <span id="spnTotalPrestamo"></span></p>
-                <p>Cuota mensual: <span id="spnCuotaMensual"></span></p>
-            </div>
-
-            <div class="status-zone">
-                <p>Estado: <span id="spnEstadoCredito">ESPERANDO DATOS...</span></p>
-            </div>
-
-            <div class="buttons">
-                <button id="btnCalcularCredito">CALCULAR CRÉDITO</button>
-                <button id="btnReiniciar">REINICIAR</button>
-            </div>
+        <div class="buttons">
+            <button id="btnCalcularCredito">CALCULAR CRÉDITO</button>
+            <button id="btnReiniciar">REINICIAR</button>
         </div>
     </div>
-
-    <script src="funciones.js"></script>
+    </div><script src="funciones.js"></script>
     <script src="simulador.js"></script>
 
 </body>
+
 </html>

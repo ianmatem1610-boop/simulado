@@ -1,7 +1,12 @@
-//AQUI TODA LA LOGICA DE LAS FUNCIONES DEL NEGOCIO
+// AQUI TODA LA LOGICA DE LAS FUNCIONES DEL NEGOCIO
 
-function calcularDisponible(ingresos, egresos) {
-    let disponible = ingresos - egresos;
+// Punto 3: Suma de los tres campos de gastos
+function calcularTotalGastos(arriendo, alimentacion, varios) {
+    return arriendo + alimentacion + varios;
+}
+
+function calcularDisponible(ingresos, totalGastos) {
+    let disponible = ingresos - totalGastos;
     if (disponible < 0) {
         return 0;
     }
